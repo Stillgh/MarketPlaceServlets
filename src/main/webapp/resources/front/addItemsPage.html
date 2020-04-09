@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="addItemsStyle.css">
+      <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="MDB/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="MDB/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="MDB/css/style.css" rel="stylesheet">
+    <title>My Items</title>
+</head>
+
+
+<body>
+
+
+    <header>
+        <div class="logo"> 
+            <div class="circle"> <img src="commas.png" alt="logo"></div>
+            <h1>Online Marketplace</h1>
+            <a href="loginPage.html">Logout</a>            
+        </div>
+    </header>
+
+
+
+
+
+<div class="card">
+    <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Edit My Items</h3>
+    <div class="card-body">
+      <div id="table" class="table-editable">
+        <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+              class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+        <table class="table table-bordered table-responsive-md table-striped text-center">
+          <thead>
+            <tr>
+              <th class="text-center">Title</th>
+              <th class="text-center">Description</th>
+              <th class="text-center">Start Price</th>
+              <th class="text-center">Start date</th>
+              <th class="text-center">End date</th>
+              <th class="text-center">Confirm</th>
+              <th class="text-center">Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="pt-3-half" contenteditable="true">Cat</td>
+              <td class="pt-3-half" contenteditable="true">Cool cat</td>
+              <td class="pt-3-half" contenteditable="true">150</td>
+              <td class="pt-3-half" contenteditable="true">01/02/2020</td>
+              <td class="pt-3-half" contenteditable="true">10/02/2020</td>
+              <td>
+                <span class="table-confirm"><button type="button"
+                    class="btn btn-danger btn-rounded btn-sm my-0">Confirm</button></span>
+              </td>
+              <td>
+                <span class="table-remove"><button type="button"
+                    class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+              </td>
+            </tr>
+            <!-- This is our clonable table line -->
+            <tr>
+              <td class="pt-3-half" contenteditable="true">Dog</td>
+              <td class="pt-3-half" contenteditable="true">Cool Dog</td>
+              <td class="pt-3-half" contenteditable="true">150</td>
+              <td class="pt-3-half" contenteditable="true">11/02/2020</td>
+              <td class="pt-3-half" contenteditable="true">20/02/2020</td>
+              <td>
+                <span class="table-add"><button type="button"
+                    class="btn btn-danger btn-rounded btn-sm my-0">Confirm</button></span>
+              </td>
+              <td>
+                <span class="table-remove"><button type="button"
+                    class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+    <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="MDB/js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="MDB/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="MDB/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="MDB/js/mdb.min.js"></script>
+  <script src="addItemsScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #38404C;
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+
+.mainBox{
+    width: 300px;
+    padding: 40;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #6A8EC4;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+}
+
+.mainBox h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.mainBox input[type = "text"], .mainBox input[type = "password"], .mainBox input[type = "email"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #58FEFC;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    color: white;
+}
+
+
+.mainBox input[type = "text"]:focus, .mainBox input[type = "password"]:focus{
+    width: 270px;
+    border-color: #58FEFC;
+}
+
+.mainBox input[type = "submit"], .mainBox input[type = "reset"] {
+    border: 0;
+    background: none;
+    display: absolute;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #58FEFC;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.mainBox input[type = "submit"]:hover, .mainBox input[type = "reset"]:hover {
+    background: #2A74E5;
+}
